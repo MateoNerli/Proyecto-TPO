@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RenovArte - Home</title>
+    <!-- FontAsome -->
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+
+  <body class="m-auto">
+    <header id="header"></header>
+
+    <div id="navbar"></div>
+
+    <div class="swiper w-full h-full mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide text-center flex justify-center items-center">
+          <img
+            class="block object-cover"
+            src="../../src/images/banner1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="block object-cover"
+            src="../../src/images/banner2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="block object-cover"
+            src="../../src/images/banner3.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <section class="contenedor categorias">
+      <h2 class="text-center my-14 border-b-2 border-black text-2xl">
+        Categoría de Productos
+      </h2>
+      <div class="listado-categorias grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="categoria">
+          <img
+            class="w-full"
+            src="../images/oficina-moderna.jpg"
+            alt="Oficina"
+          />
+          <a class="block text-center mt-2 font-semibold text-black" href="#"
+            >Oficina</a
+          >
+        </div>
+        <div class="categoria">
+          <img class="w-full" src="../images/hogar.jpg" alt="Hogar" />
+          <a class="block text-center mt-2 font-semibold text-black" href="#"
+            >Hogar</a
+          >
+        </div>
+        <div class="categoria">
+          <img class="w-full" src="../images/cocina.jpg" alt="Cocina" />
+          <a class="block text-center mt-2 font-semibold text-black" href="#"
+            >Cocina</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="sobre-nosotros"
+      class="sobre-nosotros p-1.5 mt-10 bg-cover bg-center bg-no-repeat bg-fixed bg-gradient-to-b from-transparent to-orange-900"
+    >
+      <div
+        class="contenedor sobre-nosotros-grid grid grid-cols-1 md:grid-cols-2"
+      >
+        <div class="texto-nosotros p-10 text-black">
+          <h2 class="text-2xl font-bold mb-4 border-b-2 border-black">
+            Sobre Nosotros
+          </h2>
+          <p class="text-gray-900">
+            Somos un emprendimiento que se dedica a la restauración de muebles
+            en desuso. Nuestro objetivo es darles una nueva vida para que puedan
+            ser utilizados nuevamente. Queremos que los muebles tengan una vida
+            útil más larga y no terminen en la basura. Estamos ubicados en San
+            Nicolás de los Arroyos y somos apasionados por lo que hacemos.
+          </p>
+        </div>
+        <img
+          src="../images/nosotros.jpg"
+          alt="Imagen de nosotros"
+          class="max-w-full h-auto md:block"
+        />
+      </div>
+    </section>
+
+    <main id="productos">
+      <h2 class="text-center my-14 border-b-2 border-black text-2xl">
+        Alguno de nuestros productos
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto1.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Mueble</h3>
+            <p class="text-sm text-gray-200 mb-4">
+              "¡Descubre éste mueble especial! Es perfecto para aquellos que
+              aman lo antiguo pero no lo anticuado, valoran el renacer, la
+              calidad y textura de los materiales, así como la calidez de la
+              madera. Además, aprecian el encanto artesanal y la durabilidad a
+              largo plazo. Te presentamos a un auténtico viejito de 90 años que,
+              si se trata con cariño, pasará varias generaciones contigo.
+            </p>
+            <p class="text-2xl font-bold">$150.000</p>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto2.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Sillas de campo</h3>
+            <p class="text-sm text-gray-200 mb-4">
+              Las sillas necesitaban de manera urgente un asiento. *Renovación
+              total* Saqué el junco del asiento, se lavo la madera y se protegio
+              la madera, El asiento tiene un tejido de polipropileno con dos
+              agujas, lo que queda como resultado esa cadenita en el borde de la
+              trama que queda una se puede usar al aire libre ...
+            </p>
+            <p class="text-2xl font-bold">$50.000</p>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto3.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Vajillero antiguo</h3>
+            <p class="text-sm text-gray-200 mb-4">
+              Hoy les muestro este vajillero antiguo de campo precioso !!! Lo
+              lavamos, lo restauramos con hermosos detalles de pintura
+            </p>
+            <p class="text-2xl font-bold">$100.000</p>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto9.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Vagillero de roble</h3>
+            <p class="text-sm text-gray-200 mb-4">
+              ¡Un hallazgo que robó mi corazón! Este magnífico "ex ropero"
+              capturó mi atención desde el primer momento... y no pude
+              resistirme a imaginar cómo luciría una vez terminado con amor y
+              dedicación
+            </p>
+            <p class="text-2xl font-bold">$200.000</p>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto5.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">
+              Juego de 5 sillas y mesa plegable
+            </h3>
+            <p class="text-sm text-gray-200 mb-4">
+              Lavado de madera y tapizado nuevo ! Mesa plegable y sillas, ideal
+              para espacios reducidos. Madera de guatambú, tapizado en cuerina
+              color crudo.
+            </p>
+            <p class="text-2xl font-bold">$1.000.000,00</p>
+          </div>
+        </div>
+        <!-- Producto -->
+        <div class="bg-[#8d4925] text-white">
+          <img
+            src="../images/producto12.jpg"
+            alt="Producto"
+            class="h-96 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Bahiut estilo inglé</h3>
+            <p class="text-sm text-gray-200 mb-4">
+              Los cambios tienen que ser rotundos o no ser. Éste bello mueble
+              adquirió más "seguridad". Ahora tiene PERSONALIDAD..( tenía que
+              pasar por el negro) Hermoso mueble que original quedaba oscuro y
+              de color claro llena un hermoso espacio que vuelve a contar una
+              nueva historia. Ahora lo tengo que soltar!!! Espero que les guste
+              y puedan ver qué un mismo mueble puede tener mil vidas, mil
+              opciones y adaptar a cualquier estilo.
+            </p>
+            <p class="text-2xl font-bold">$170.000</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="bg-gray-800 text-white py-12 mt-10"></footer>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

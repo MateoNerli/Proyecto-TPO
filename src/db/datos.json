@@ -1,0 +1,92 @@
+{
+  "muebles": [
+    {
+      "id": 1,
+      "nombre": "Sofá de cuero",
+      "imagen": "url_de_la_imagen",
+      "precio": 599.99,
+      "descripcion": "Un elegante sofá de cuero genuino para su sala de estar.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 2,
+      "nombre": "Mesa de comedor",
+      "imagen": "url_de_la_imagen",
+      "precio": 299.99,
+      "descripcion": "Una mesa de comedor de madera maciza con capacidad para 6 personas.",
+      "tipo": "Comedor"
+    },
+    {
+      "id": 3,
+      "nombre": "Cama king-size",
+      "imagen": "url_de_la_imagen",
+      "precio": 799.99,
+      "descripcion": "Una espaciosa cama king-size con cabecera tapizada.",
+      "tipo": "Dormitorio"
+    },
+    {
+      "id": 4,
+      "nombre": "Silla de oficina",
+      "imagen": "url_de_la_imagen",
+      "precio": 149.99,
+      "descripcion": "Una silla de oficina ergonómica con ruedas.",
+      "tipo": "Oficina"
+    },
+    {
+      "id": 5,
+      "nombre": "Silla de comedor",
+      "imagen": "url_de_la_imagen",
+      "precio": 99.99,
+      "descripcion": "Una silla de comedor de madera maciza (paquete de 2).",
+      "tipo": "Comedor"
+    },
+    {
+      "id": 6,
+      "nombre": "Sofá de tela",
+      "imagen": "url_de_la_imagen",
+      "precio": 499.99,
+      "descripcion": "Un cómodo sofá de tela para su sala de estar.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 7,
+      "nombre": "Cama queen-size",
+      "imagen": "url_de_la_imagen",
+      "precio": 699.99,
+      "descripcion": "Una cama queen-size con cabecera tapizada.",
+      "tipo": "Dormitorio"
+    },
+    {
+      "id": 8,
+      "nombre": "Silla de oficina",
+      "imagen": "url_de_la_imagen",
+      "precio": 129.99,
+      "descripcion": "Una silla de oficina ergonómica con ruedas.",
+      "tipo": "Oficina"
+    },
+    {
+      "id": 9,
+      "nombre": "Silla de comedor",
+      "imagen": "url_de_la_imagen",
+      "precio": 89.99,
+      "descripcion": "Una silla de comedor de madera maciza (paquete de 2).",
+      "tipo": "Comedor"
+    },
+    {
+      "id": 10,
+      "nombre": "Sofá de tela",
+      "imagen": "url_de_la_imagen",
+      "precio": 399.99,
+      "descripcion": "Un cómodo sofá de tela para su sala de estar.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 11,
+      "nombre": "Cama queen-size",
+      "imagen": "url_de_la_imagen",
+      "precio": 699.99,
+      "descripcion": "Una cama queen-size con cabecera tapizada.",
+      "tipo": "Dormitorio"
+    }
+  ]
+}
