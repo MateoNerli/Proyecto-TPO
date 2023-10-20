@@ -8,50 +8,84 @@
   </head>
   <body>
     <header id="header"></header>
+    <div id="menu" class="md:hidden"></div>
     <div id="navbar"></div>
 
     <main class="container mx-auto py-8">
-      <h2 class="text-2xl font-bold mb-4">Nuestros productos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="bg-white shadow-md rounded-md overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Producto 1"
-            class="w-full"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-bold mb-2">Producto 1</h3>
-            <p class="text-gray-700">Descripción del producto 1.</p>
-            <p class="text-gray-900 font-bold mt-2">$100</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-md rounded-md overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Producto 2"
-            class="w-full"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-bold mb-2">Producto 2</h3>
-            <p class="text-gray-700">Descripción del producto 2.</p>
-            <p class="text-gray-900 font-bold mt-2">$200</p>
-          </div>
-        </div>
-        <div class="bg-white shadow-md rounded-md overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Producto 3"
-            class="w-full"
-          />
-          <div class="p-4">
-            <h3 class="text-lg font-bold mb-2">Producto 3</h3>
-            <p class="text-gray-700">Descripción del producto 3.</p>
-            <p class="text-gray-900 font-bold mt-2">$300</p>
+      <h2 class="text-2xl font-bold mb-4 text-center">Nuestros productos</h2>
+
+      <div id="app" class="mt-4">
+        <select name="tipo" id="tipo" class="border rounded p-2">
+          <option v-for="elemento in tipos" :value="elemento">
+            {{elemento}}
+          </option>
+        </select>
+        <button
+          v-on:click="filtarDatos()"
+          class="bg-[#8d4925] text-white px-4 py-2 rounded mt-2"
+        >
+          Filtrar</button
+        ><br />
+
+        <label for="orden" class="mt-2">Orden:</label>
+        <input
+          type="checkbox"
+          name="orden"
+          id="ordenNombre"
+          class="mr-1 m-4"
+        />Nombre
+        <input
+          type="checkbox"
+          name="orden"
+          id="ordenTipo"
+          class="mr-1 m-4"
+        />Tipo
+        <input
+          type="checkbox"
+          name="orden"
+          id="ordenPrecio"
+          class="mr-1 m-4"
+        />Precio
+        <button
+          v-on:click="ordenarDatos()"
+          class="bg-[#8d4925] text-white px-4 py-2 rounded mt-2"
+        >
+          Ordenar
+        </button>
+        <div
+          class="contenedor grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
+        >
+          <div
+            v-for="elemento in datosFinales"
+            class="bg-white shadow-md rounded-md overflow-hidden"
+            :key="elemento.id"
+          >
+            <img
+              v-if="elemento && elemento.imagen"
+              v-bind:src="elemento.imagen"
+              :alt="elemento.nombre"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 v-if="elemento" class="text-lg font-bold mb-2">
+                {{elemento.nombre}}
+              </h3>
+              <p v-if="elemento" class="">Tipo: {{elemento.tipo}}</p>
+              <p v-if="elemento" class="text-gray-700">
+                {{elemento.descripcion}}
+              </p>
+              <p v-if="elemento" class="text-gray-900 font-bold mt-2">
+                {{elemento.precio}}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer id="footer" class="bg-gray-800 text-white py-12 mt-10"></footer>
   </body>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="../js/scripts.js"></script>
+  <script src="../js/galeria.js"></script>
 </html>

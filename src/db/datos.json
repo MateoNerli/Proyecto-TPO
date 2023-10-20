@@ -3,7 +3,7 @@
     {
       "id": 1,
       "nombre": "Sofá de cuero",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/sofa-de-cuero.jpg",
       "precio": 599.99,
       "descripcion": "Un elegante sofá de cuero genuino para su sala de estar.",
       "tipo": "Sala de estar"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "nombre": "Mesa de comedor",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/Mesa-de-comedor.jpg",
       "precio": 299.99,
       "descripcion": "Una mesa de comedor de madera maciza con capacidad para 6 personas.",
       "tipo": "Comedor"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "nombre": "Cama king-size",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/queen-size.jpg",
       "precio": 799.99,
       "descripcion": "Una espaciosa cama king-size con cabecera tapizada.",
       "tipo": "Dormitorio"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "nombre": "Silla de oficina",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/silla-ofi.jpg",
       "precio": 149.99,
       "descripcion": "Una silla de oficina ergonómica con ruedas.",
       "tipo": "Oficina"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "nombre": "Silla de comedor",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/silla-come.jpg",
       "precio": 99.99,
       "descripcion": "Una silla de comedor de madera maciza (paquete de 2).",
       "tipo": "Comedor"
@@ -43,50 +43,66 @@
     {
       "id": 6,
       "nombre": "Sofá de tela",
-      "imagen": "url_de_la_imagen",
-      "precio": 499.99,
-      "descripcion": "Un cómodo sofá de tela para su sala de estar.",
-      "tipo": "Sala de estar"
-    },
-    {
-      "id": 7,
-      "nombre": "Cama queen-size",
-      "imagen": "url_de_la_imagen",
-      "precio": 699.99,
-      "descripcion": "Una cama queen-size con cabecera tapizada.",
-      "tipo": "Dormitorio"
-    },
-    {
-      "id": 8,
-      "nombre": "Silla de oficina",
-      "imagen": "url_de_la_imagen",
-      "precio": 129.99,
-      "descripcion": "Una silla de oficina ergonómica con ruedas.",
-      "tipo": "Oficina"
-    },
-    {
-      "id": 9,
-      "nombre": "Silla de comedor",
-      "imagen": "url_de_la_imagen",
-      "precio": 89.99,
-      "descripcion": "Una silla de comedor de madera maciza (paquete de 2).",
-      "tipo": "Comedor"
-    },
-    {
-      "id": 10,
-      "nombre": "Sofá de tela",
-      "imagen": "url_de_la_imagen",
+      "imagen": "../images/galeria/sofa-tela.jpg",
       "precio": 399.99,
       "descripcion": "Un cómodo sofá de tela para su sala de estar.",
       "tipo": "Sala de estar"
     },
     {
+      "id": 7,
+      "nombre": "Vajillero moderno",
+      "imagen": "../images/galeria/vajillero-moderno.jpg",
+      "precio": 399.99,
+      "descripcion": "Un vajillero moderno,compuesto con madera aglomerado, recubierto con melaminda de buena calidad.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 8,
+      "nombre": "Mueble antiguo",
+      "imagen": "../images/galeria/antigu.jpg",
+      "precio": 399.99,
+      "descripcion": "Un mueble antiguo,compuesto con madera aglomerado, en muy nuen estado",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 9,
+      "nombre": "Barra",
+      "imagen": "../images/galeria/barra.jpg",
+      "precio": 399.99,
+      "descripcion": "Barra organizadora de cocina de Hierro y Madera.Barra organizadora de cocina para guardar todo lo que se te ocurra. Desde platos, vasos y botellas hasta condimenteros y frascos. Y todavia vas a tener un perfecto espacio para colocar tu horno electrico o microondas..",
+      "tipo": "Cocina"
+    },
+    {
+      "id": 10,
+      "nombre": "Sillones de patio",
+      "imagen": "../images/galeria/sillon-patio.jpg",
+      "precio": 399.99,
+      "descripcion": "Sillones de patio de  Madera. Muy essteticos para el jardin.",
+      "tipo": "Jardin"
+    },
+    {
       "id": 11,
-      "nombre": "Cama queen-size",
-      "imagen": "url_de_la_imagen",
-      "precio": 699.99,
-      "descripcion": "Una cama queen-size con cabecera tapizada.",
-      "tipo": "Dormitorio"
+      "nombre": "Mueble de melamina",
+      "imagen": "../images/galeria/madedera34.jpg",
+      "precio": 399.99,
+      "descripcion": "Construido en melamina lino con los cantos pegados en el mismo tono.El armado es por encastre, no requiere herramientas",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 12,
+      "nombre": "mueble Living",
+      "imagen": "../images/galeria/mueble-liv.jpg",
+      "precio": 399.99,
+      "descripcion": "Mueble de living de madera maciza, con cajones y puertas. Muy estetico para el living.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 13,
+      "nombre": "Mueble restaurado",
+      "imagen": "../images/galeria/restaurado1.jpg",
+      "precio": 399.99,
+      "descripcion": "Mueble restaurado de madera maciza, con cajones, tuvo un pequeño golpe en la parte superior, pero se restauro y quedo como nuevo. Muy estetico para el living.",
+      "tipo": "Sala de estar"
     }
   ]
 }

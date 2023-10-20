@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-#menu-toggle.active {
-  display: none;
+@media (max-width: 768px) {
+  #navbar {
+    display: flex; /* Cambia a flex para mostrar los elementos en línea */
+    flex-direction: column; /* Coloca los elementos en una columna */
+  }
+}
+#close-toggle {
+  display: none; /* Ocultar el ícono de cierre por defecto */
 }
 
-#close-toggle.active {
-  display: block;
+/* Estilos para el menú desplegable en pantalla pequeña */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: none; /* Ocultar el ícono de hamburguesa en pantalla pequeña por defecto */
+  }
+
+  #close-toggle {
+    display: block; /* Mostrar el ícono de cierre en pantalla pequeña */
+  }
+
+  /* Estilos para el menú desplegable, como fondo y posición fija */
 }
