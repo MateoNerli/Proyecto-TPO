@@ -1,0 +1,160 @@
+.containerGaleria {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 10px;
+}
+
+.tituloGale {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  color: #333;
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btnFiltro {
+  padding: 0.5rem 1rem;
+  margin: 10px;
+  background-color: #865621;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.checkbox-label {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.checkbox-custom {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="checkbox"] {
+  margin: 10px;
+}
+
+input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+}
+
+.btnOrfenar {
+  padding: 0.5rem 1rem;
+  background-color: #865621;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.contenedorGaleri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.elementGale {
+  flex: 0 0 calc(32% - 1rem);
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.elementGale img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.elementGale .p-4 {
+  padding: 1rem;
+}
+
+.nombre {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 425px) {
+  .elementGale {
+    flex: 0 0 calc(100% - 1rem);
+  }
+  .contenedorGaleri img {
+    width: 100%;
+  }
+  .contenedorGaleri {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  select {
+    max-width: 100%;
+  }
+
+  .btnFiltro {
+    margin-top: 0.5rem;
+  }
+  .checkbox-container {
+    flex-direction: column;
+  }
+  .elementGale {
+    flex: 0 0 calc(48% - 1rem);
+  }
+
+  select {
+    margin-right: 0.5rem;
+  }
+}

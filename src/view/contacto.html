@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
+
     <!-- FontAsome -->
     <script
       src="https://kit.fontawesome.com/2c36e9b7b1.js"
@@ -47,27 +48,37 @@
                   name="nombre"
                   class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
-
-                <label for="apellido" class="leading-7 text-sm text-gray-600">
-                  Apellido
-                </label>
-                <input
-                  type="text"
-                  id="apellido"
-                  name="apellido"
-                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-
-                <label for="email" class="leading-7 text-sm text-gray-600"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
+                <span id="nombreError" class="text-red-500 text-sm hidden">
+                  Este campo no puede estar vacío.
+                </span>
               </div>
+
+              <label for="apellido" class="leading-7 text-sm text-gray-600">
+                Apellido
+              </label>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+              <span id="apellidoError" class="text-red-500 text-sm hidden">
+                Este campo no puede estar vacío.
+              </span>
+
+              <label for="email" class="leading-7 text-sm text-gray-600">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+              <span id="emailError" class="text-red-500 text-sm hidden">
+                Este campo no puede estar vacío.
+              </span>
+
               <div class="relative mb-4">
                 <label for="message" class="leading-7 text-sm text-gray-600"
                   >Message</label
@@ -77,6 +88,9 @@
                   name="message"
                   class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
+                <span id="messageError" class="text-red-500 text-sm hidden"
+                  >Este campo no puede estar vacío.</span
+                >
               </div>
               <button
                 type="submit"

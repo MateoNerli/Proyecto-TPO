@@ -10,10 +10,14 @@
       src="https://kit.fontawesome.com/2c36e9b7b1.js"
       crossorigin="anonymous"
     ></script>
-    <!--Tailwind  -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/swiper.css" />
+    <link rel="stylesheet" href="../styles/categorias.css" />
+    <link rel="stylesheet" href="../styles/sobre.css" />
+    <link rel="stylesheet" href="../styles/product.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <!-- Swiper -->
     <link
       rel="stylesheet"
@@ -22,40 +26,22 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
 
-  <body class="m-auto">
-    <header id="header"></header>
-    <div id="menu" class="md:hidden"></div>
+  <body>
     <div id="navbar"></div>
 
-    <div class="swiper w-full h-full mySwiper">
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide text-center flex justify-center items-center">
-          <img
-            class="block object-cover"
-            src="../../src/images/baner4.png"
-            alt=""
-          />
+        <div class="swiper-slide">
+          <img src="../../src/images/baner4.png" alt="" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="block object-cover"
-            src="../../src/images/baner5.png"
-            alt=""
-          />
+          <img src="../../src/images/baner5.png" alt="" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="block object-cover"
-            src="../../src/images/baner6.png"
-            alt=""
-          />
+          <img src="../../src/images/baner6.png" alt="" />
         </div>
         <div class="swiper-slide">
-          <img
-            class="block object-cover"
-            src="../../src/images/baner7.png"
-            alt=""
-          />
+          <img src="../../src/images/baner7.png" alt="" />
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -63,50 +49,35 @@
     </div>
 
     <section class="contenedor categorias">
-      <h2 class="text-center my-14 border-b-2 border-black text-2xl">
-        Categoría de Productos
-      </h2>
-      <div class="listado-categorias grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="categoria w-62 h-50 overflow-hidden m-5">
-          <div class="w-full h-full transition object-cover hover:scale-125">
-            <a href="./galeria.html">
-              <img src="../images/oficina-moderna.jpg" alt="Oficina" />
-              <h4 class="text-center mt-2 font-semibold text-black">Oficina</h4>
-            </a>
-          </div>
+      <h2 class="titulo">Categoría de Productos</h2>
+      <div class="listado-categorias">
+        <div class="categoria">
+          <a href="./galeria.html">
+            <img src="../images/oficina-moderna.jpg" alt="Oficina" />
+            <h4>Oficina</h4>
+          </a>
         </div>
 
-        <div class="categoria w-62 h-50 overflow-hidden m-5">
-          <div class="w-full h-full transition object-cover hover:scale-125">
-            <a href="./galeria.html">
-              <img src="../images/cocina.jpg" alt="Cocina" />
-              <h4 class="text-center mt-2 font-semibold text-black">Cocina</h4>
-            </a>
-          </div>
+        <div class="categoria">
+          <a href="./galeria.html">
+            <img src="../images/cocina.jpg" alt="Cocina" />
+            <h4>Cocina</h4>
+          </a>
         </div>
-        <div class="categoria w-62 h-50 overflow-hidden m-5">
-          <div class="w-full h-full transition object-cover hover:scale-125">
-            <a href="./galeria.html">
-              <img src="../images/hogar.jpg" alt="Oficina" />
-              <h4 class="text-center mt-2 font-semibold text-black">Living</h4>
-            </a>
-          </div>
+        <div class="categoria">
+          <a href="./galeria.html">
+            <img src="../images/hogar.jpg" alt="Oficina" />
+            <h4>Living</h4>
+          </a>
         </div>
       </div>
     </section>
 
-    <section
-      id="sobre-nosotros"
-      class="sobre-nosotros p-1.5 mt-10 bg-cover bg-center bg-no-repeat bg-fixed bg-gradient-to-b from-transparent to-orange-900"
-    >
-      <div
-        class="contenedor sobre-nosotros-grid grid grid-cols-1 md:grid-cols-2"
-      >
-        <div class="texto-nosotros p-10 text-black">
-          <h2 class="text-2xl font-bold mb-4 border-b-2 border-black">
-            Sobre Nosotros
-          </h2>
-          <p class="text-gray-900">
+    <section id="sobre-nosotros" class="sobre-nosotros">
+      <div class="contenedor sobre-nosotros-grid">
+        <div class="texto-nosotros">
+          <h2>Sobre Nosotros</h2>
+          <p>
             Somos un emprendimiento que se dedica a la restauración de muebles
             en desuso. Nuestro objetivo es darles una nueva vida para que puedan
             ser utilizados nuevamente. Queremos que los muebles tengan una vida
@@ -114,28 +85,18 @@
             Nicolás de los Arroyos y somos apasionados por lo que hacemos.
           </p>
         </div>
-        <img
-          src="../images/nosotros.jpg"
-          alt="Imagen de nosotros"
-          class="max-w-full h-auto md:block"
-        />
+        <img src="../images/nosotros.jpg" alt="Imagen de nosotros" />
       </div>
     </section>
 
     <main id="productos">
-      <h2 class="text-center my-14 border-b-2 border-black text-2xl">
-        Alguno de nuestros productos
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-[#8d4925] text-white">
-          <img
-            src="../images/producto1.jpg"
-            alt="Producto"
-            class="h-96 w-full object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Mueble</h3>
-            <p class="text-sm text-gray-200 mb-4">
+      <h2>Alguno de nuestros productos</h2>
+      <div class="prodConte">
+        <div class="prod">
+          <img src="../images/producto1.jpg" alt="Producto" />
+          <div>
+            <h3 class="nombre">Mueble</h3>
+            <p class="descrip">
               "¡Descubre éste mueble especial! Es perfecto para aquellos que
               aman lo antiguo pero no lo anticuado, valoran el renacer, la
               calidad y textura de los materiales, así como la calidez de la
@@ -143,91 +104,81 @@
               largo plazo. Te presentamos a un auténtico viejito de 90 años que,
               si se trata con cariño, pasará varias generaciones contigo.
             </p>
-            <p class="text-2xl font-bold">$150.000</p>
+            <p class="precio">$150.000</p>
           </div>
         </div>
-        <!-- Producto -->
-        <div class="bg-[#8d4925] text-white">
-          <img
-            src="../images/producto2.jpg"
-            alt="Producto"
-            class="h-96 w-full object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Sillas de campo</h3>
-            <p class="text-sm text-gray-200 mb-4">
+        <div class="prod">
+          <img src="../images/producto2.jpg" alt="Producto" />
+          <div>
+            <h3 class="nombre">Sillas de campo</h3>
+            <p class="descrip">
               Las sillas necesitaban de manera urgente un asiento. *Renovación
               total* Saqué el junco del asiento, se lavo la madera y se protegio
               la madera, El asiento tiene un tejido de polipropileno con dos
               agujas, lo que queda como resultado esa cadenita en el borde de la
               trama que queda una se puede usar al aire libre ...
             </p>
-            <p class="text-2xl font-bold">$50.000</p>
+            <p class="precio">$50.000</p>
           </div>
         </div>
-        <!-- Producto -->
-        <div class="bg-[#8d4925] text-white">
+
+        <div class="prod">
           <img
             src="../images/producto3.jpg"
             alt="Producto"
             class="h-96 w-full object-cover"
           />
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Vajillero antiguo</h3>
-            <p class="text-sm text-gray-200 mb-4">
+            <h3 class="nombre">Vajillero antiguo</h3>
+            <p class="descrip">
               Hoy les muestro este vajillero antiguo de campo precioso !!! Lo
               lavamos, lo restauramos con hermosos detalles de pintura
             </p>
-            <p class="text-2xl font-bold">$100.000</p>
+            <p class="precio">$100.000</p>
           </div>
         </div>
-        <!-- Producto -->
-        <div class="bg-[#8d4925] text-white">
+        <div class="prod">
           <img
             src="../images/producto9.jpg"
             alt="Producto"
             class="h-96 w-full object-cover"
           />
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Vagillero de roble</h3>
-            <p class="text-sm text-gray-200 mb-4">
+            <h3 class="nombre">Vagillero de roble</h3>
+            <p class="descrip">
               ¡Un hallazgo que robó mi corazón! Este magnífico "ex ropero"
               capturó mi atención desde el primer momento... y no pude
               resistirme a imaginar cómo luciría una vez terminado con amor y
               dedicación
             </p>
-            <p class="text-2xl font-bold">$200.000</p>
+            <p class="precio">$200.000</p>
           </div>
         </div>
-        <!-- Producto -->
-        <div class="bg-[#8d4925] text-white">
+        <div class="prod">
           <img
             src="../images/producto5.jpg"
             alt="Producto"
             class="h-96 w-full object-cover"
           />
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">
-              Juego de 5 sillas y mesa plegable
-            </h3>
-            <p class="text-sm text-gray-200 mb-4">
+            <h3 class="nombre">Juego de 5 sillas y mesa plegable</h3>
+            <p class="descrip">
               Lavado de madera y tapizado nuevo ! Mesa plegable y sillas, ideal
               para espacios reducidos. Madera de guatambú, tapizado en cuerina
               color crudo.
             </p>
-            <p class="text-2xl font-bold">$75.000</p>
+            <p class="precio">$75.000</p>
           </div>
         </div>
-        <!-- Producto -->
-        <div class="bg-[#8d4925] text-white">
+        <div class="prod">
           <img
             src="../images/producto12.jpg"
             alt="Producto"
             class="h-96 w-full object-cover"
           />
           <div class="p-4">
-            <h3 class="text-xl font-semibold mb-2">Bahiut estilo inglé</h3>
-            <p class="text-sm text-gray-200 mb-4">
+            <h3 class="nombre">Bahiut estilo inglés</h3>
+            <p class="descrip">
               Los cambios tienen que ser rotundos o no ser. Éste bello mueble
               adquirió más "seguridad". Ahora tiene PERSONALIDAD..( tenía que
               pasar por el negro) Hermoso mueble que original quedaba oscuro y
@@ -236,13 +187,13 @@
               y puedan ver qué un mismo mueble puede tener mil vidas, mil
               opciones y adaptar a cualquier estilo.
             </p>
-            <p class="text-2xl font-bold">$170.000</p>
+            <p class="precio">$170.000</p>
           </div>
         </div>
       </div>
     </main>
 
-    <footer id="footer" class="bg-gray-800 text-white py-12 mt-10"></footer>
+    <footer id="footer"></footer>
 
     <script src="../js/scripts.js"></script>
     <script src="../js/index.js"></script>

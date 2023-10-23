@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FontAsome -->
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <div id="menu" class="md:hidden"></div>
+    <div id="navbar"></div>
+    <div class="containerForm">
+      <form class="form">
+        <p class="title">Registro</p>
+        <p class="message">Registrate en nuestra pagina.</p>
+        <div class="flex">
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Nombre</span>
+          </label>
+
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Apellido</span>
+          </label>
+        </div>
+
+        <label>
+          <input class="input" type="email" placeholder="" required="" />
+          <span>Email</span>
+        </label>
+
+        <label class="password-label">
+          <input
+            class="input"
+            type="password"
+            id="pass"
+            placeholder=""
+            required
+          />
+          <span>Contraseña</span>
+          <i
+            class="toggle-password fas fa-eye"
+            onclick="togglePassword(this)"
+          ></i>
+        </label>
+        <label>
+          <input
+            class="input"
+            type="password"
+            id="passCon"
+            placeholder=""
+            required
+          />
+          <span>Confirma Contraseña</span>
+          <i
+            class="toggle-password fas fa-eye"
+            onclick="togglePasswordCon(this)"
+          ></i>
+        </label>
+        <button class="submit">Registrate</button>
+        <p class="signin">Ya tenes una cuenta? <a href="#">Ingresa</a></p>
+      </form>
+    </div>
+    <footer id="footer" class="bg-gray-800 text-white py-12"></footer>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>

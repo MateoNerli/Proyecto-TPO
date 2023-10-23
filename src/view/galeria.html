@@ -1,89 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Productos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>RenovArte - Galeria</title>
+    <!-- FontAsome -->
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/galeria.css" />
   </head>
   <body>
-    <header id="header"></header>
-    <div id="menu" class="md:hidden"></div>
     <div id="navbar"></div>
 
-    <main class="container mx-auto py-8">
-      <h2 class="text-2xl font-bold mb-4 text-center">Nuestros productos</h2>
+    <main class="">
+      <h2 class="tituloGale">Nuestros productos</h2>
 
-      <div id="app" class="mt-4">
-        <select name="tipo" id="tipo" class="border rounded p-2">
+      <div id="app" class="containerGaleria">
+        <select name="tipo" id="tipo" class="">
           <option value="todos">Todos</option>
           <option v-for="elemento in tipos" :value="elemento">
             {{elemento}}
           </option>
         </select>
-        <button
-          v-on:click="filtarDatos()"
-          class="bg-[#8d4925] text-white px-4 py-2 rounded mt-2"
-        >
-          Filtrar</button
-        ><br />
+        <button v-on:click="filtarDatos()" class="btnFiltro">Filtrar</button>
 
-        <label for="orden" class="mt-2">Orden:</label>
-        <input
-          type="checkbox"
-          name="orden"
-          id="ordenNombre"
-          class="mr-1 m-4"
-        />Nombre
-        <input
-          type="checkbox"
-          name="orden"
-          id="ordenTipo"
-          class="mr-1 m-4"
-        />Tipo
-        <input
-          type="checkbox"
-          name="orden"
-          id="ordenPrecio"
-          class="mr-1 m-4"
-        />Precio
-        <button
-          v-on:click="ordenarDatos()"
-          class="bg-[#8d4925] text-white px-4 py-2 rounded mt-2"
-        >
-          Ordenar
-        </button>
-        <div
-          class="contenedor grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
-        >
+        <div class="check">
+          <label for="orden">Orden:</label>
+          <input type="checkbox" name="orden" id="ordenNombre" />Nombre
+          <input type="checkbox" name="orden" id="ordenTipo" />Tipo
+          <input type="checkbox" name="orden" id="ordenPrecio" />Precio
+          <button v-on:click="ordenarDatos()" class="btnOrfenar">
+            Ordenar
+          </button>
+        </div>
+        <div class="contenedorGaleri">
           <div
             v-for="elemento in datosFinales"
-            class="bg-white shadow-md rounded-md overflow-hidden"
+            class="elementGale"
             :key="elemento.id"
           >
             <img
               v-if="elemento && elemento.imagen"
               v-bind:src="elemento.imagen"
               :alt="elemento.nombre"
-              class="w-full"
             />
             <div class="p-4">
-              <h3 v-if="elemento" class="text-lg font-bold mb-2">
-                {{elemento.nombre}}
-              </h3>
-              <p v-if="elemento" class="">Tipo: {{elemento.tipo}}</p>
-              <p v-if="elemento" class="text-gray-700">
-                {{elemento.descripcion}}
-              </p>
-              <p v-if="elemento" class="text-gray-900 font-bold mt-2">
-                {{elemento.precio}}
-              </p>
+              <h3 v-if="elemento" class="nombre">{{elemento.nombre}}</h3>
+              <p v-if="elemento">Tipo: {{elemento.tipo}}</p>
+              <p v-if="elemento" class="desc">{{elemento.descripcion}}</p>
+              <p v-if="elemento" class="precio">{{elemento.precio}}</p>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer id="footer" class="bg-gray-800 text-white py-12 mt-10"></footer>
+
+    <footer id="footer"></footer>
   </body>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
