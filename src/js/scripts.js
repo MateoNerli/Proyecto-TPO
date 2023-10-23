@@ -5,31 +5,31 @@ nav = `
       Renov <span >Arte</span>
     </h1>
   </div>
-
+    
   <nav>
     <ul class="nav-links">
-          <li><a  href="./index.html">Inicio</a></li>
-          <li><a href="./#sobre-nosotros">Nosotros</a></li>
-          <li><a  href="./#productos">Algunas restauraciones</a></li>
-          <li><a href="./galeria.html">Galeria</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./login.html">Login</a></li>
+      <li><a  href="./index.html">Inicio</a></li>
+      <li><a href="./#sobre-nosotros">Nosotros</a></li>
+      <li><a  href="./#productos">Restauraciones</a></li>
+      <li><a href="./galeria.html">Galeria</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+      <li><a href="./register.html" class="btn-register">Registro</a></li>
     </ul>            
   </nav>
-
-        <a onclick="openNav()" class="menu" href="#"><button><i class="fas fa-bars"></i></button></a>
-
-        <div id="mobile-menu" class="overlay">
-            <a onclick="closeNav()" href="" class="close">&times;</a>
-            <div class="overlay-content">
-            <a  href="./index.html">Inicio</a>
-            <a href="./#sobre-nosotros">Nosotros</a>
-            <a  href="./#productos">Algunas restauraciones</a>
-            <a href="./galeria.html">Galeria</a>
-            <a href="./contacto.html">Contacto</a>
-            <a href="./login.html">Login</a>
-           </div>
-      </div>
+    
+  <a onclick="openNav()" class="menu" href="#"><button><i class="fas fa-bars"></i></button></a>
+    
+  <div id="mobile-menu" class="overlay">
+    <a onclick="closeNav()" href="" class="close">&times;</a>
+      <div class="overlay-content">
+          <a  href="./index.html">Inicio</a>
+          <a href="./#sobre-nosotros">Nosotros</a>
+          <a  href="./#productos">Restauraciones</a>
+          <a href="./galeria.html">Galeria</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="./register.html" class="btn-register">Registro</a>   
+        </div>
+  </div>
 
 </header>
 `;

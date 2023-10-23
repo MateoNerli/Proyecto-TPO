@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -35,6 +35,28 @@ body {
   color: #8d4925;
   font-size: 30px;
   font-weight: 700;
+}
+.header .btn-register {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  text-decoration: none;
+  padding: 9px 25px;
+  background: #8d4925;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header .btn-register {
+  text-decoration: none;
+  color: #1b3039;
+}
+
+.header .btn-register:hover {
+  background-color: #562b14;
+  color: black;
+  transform: scale(1.1);
 }
 
 .header .nav-links {

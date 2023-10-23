@@ -150,10 +150,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 10px; /* Ajusta la posición a tu preferencia */
+  right: 10px;
   cursor: pointer;
 }
 
 .input {
-  padding-right: 30px; /* Ajusta el espacio para el ícono del ojo */
+  padding-right: 30px;
 }
