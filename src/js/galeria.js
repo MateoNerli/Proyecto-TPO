@@ -25,10 +25,15 @@ createApp({
         });
     },
     filtarDatos() {
-      tipo = document.querySelector("#tipo").value;
-      this.datosFinales = this.datos.filter(
-        (elemento) => elemento.tipo == tipo
-      );
+      const tipoSeleccionado = document.querySelector("#tipo").value;
+
+      if (tipoSeleccionado === "todos") {
+        this.datosFinales = this.datos;
+      } else {
+        this.datosFinales = this.datos.filter(
+          (elemento) => elemento.tipo === tipoSeleccionado
+        );
+      }
     },
     ordenarDatos() {
       if (document.querySelector("#ordenNombre").checked)

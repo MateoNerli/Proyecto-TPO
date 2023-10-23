@@ -16,6 +16,7 @@
 
       <div id="app" class="mt-4">
         <select name="tipo" id="tipo" class="border rounded p-2">
+          <option value="todos">Todos</option>
           <option v-for="elemento in tipos" :value="elemento">
             {{elemento}}
           </option>

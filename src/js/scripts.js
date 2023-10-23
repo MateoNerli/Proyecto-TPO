@@ -25,11 +25,11 @@ document.getElementById("menu").innerHTML = menu;
 nav = `
 <nav id="navbar" class="hidden md:flex justify-center items-center py-4 border-t-2">
   <a class="items-center block p-4 text-2xl hover:border-b-2" href="./index.html">Inicio</a>
-  <a class="items-center block p-4 text-2xl hover:border-b-2" href="#sobre-nosotros">Nosotros</a>
-  <a class="items-center block p-4 text-2xl hover:border-b-2" href="#productos">Algunas restauraciones</a>
+  <a class="items-center block p-4 text-2xl hover:border-b-2" href="./#sobre-nosotros">Nosotros</a>
+  <a class="items-center block p-4 text-2xl hover:border-b-2" href="./#productos">Algunas restauraciones</a>
   <a class="items-center block p-4 text-2xl hover:border-b-2" href="./galeria.html">Galeria</a>
   <a class="items-center block p-4 text-2xl hover:border-b-2" href="./contacto.html">Contacto</a>
-  <a class="items-center block p-4 text-2xl hover:border-b-2" href="login.html">Login</a>
+  <a class="items-center block p-4 text-2xl hover:border-b-2" href="./login.html">Login</a>
 </nav>`;
 document.getElementById("navbar").innerHTML = nav;
 
@@ -42,7 +42,6 @@ footer = `
       <a href="#" class="text-gray-400 hover:text-white">Cocina</a>
       <a href="#" class="text-gray-400 hover:text-white">Oficina</a>
       <a href="#" class="text-gray-400 hover:text-white">Jardín</a>
-      <a href="#" class="text-gray-400 hover:text-white">Cochera</a>
       <a href="#" class="text-gray-400 hover:text-white">Dormitorios</a>
     </nav>
   </div>
