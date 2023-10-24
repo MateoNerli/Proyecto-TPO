@@ -14,15 +14,17 @@ a {
 
 .listado-categorias {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
   gap: 6px;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .categoria {
   width: 100%;
   max-width: 16rem;
+  height: 16rem;
   margin: 5px;
 }
 
