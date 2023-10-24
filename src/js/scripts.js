@@ -1,9 +1,11 @@
 nav = `
 <header class="header">
   <div class="logo">
+  <a  href="./index.html">
     <h1 >
       Renov <span >Arte</span>
     </h1>
+    </a>
   </div>
     
   <nav>
