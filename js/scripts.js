@@ -25,11 +25,11 @@ nav = `
     <a onclick="closeNav()" href="" class="close">&times;</a>
       <div class="overlay-content">
           <a  href="../index.html">Inicio</a>
-          <a href="./#sobre-nosotros">Nosotros</a>
-          <a  href="./#productos">Restauraciones</a>
-          <a href="./galeria.html">Galeria</a>
-          <a href="./contacto.html">Contacto</a>
-          <a href="./register.html" class="btn-register">Registro</a>   
+          <a href="../#sobre-nosotros">Nosotros</a>
+          <a  href="../#productos">Restauraciones</a>
+          <a href="../view/galeria.html">Galeria</a>
+          <a href="../view/contacto.html">Contacto</a>
+          <a href="../view/register.html" class="btn-register">Registro</a>   
         </div>
   </div>
 
