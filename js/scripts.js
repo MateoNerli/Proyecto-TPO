@@ -1,7 +1,7 @@
 nav = `
 <header class="header">
   <div class="logo">
-  <a  href="./index.html">
+  <a  href="../index.html">
     <h1 >
       Renov <span >Arte</span>
     </h1>
@@ -10,12 +10,12 @@ nav = `
     
   <nav>
     <ul class="nav-links">
-      <li><a  href="./index.html">Inicio</a></li>
-      <li><a href="./#sobre-nosotros">Nosotros</a></li>
-      <li><a  href="./#productos">Restauraciones</a></li>
-      <li><a href="./galeria.html">Galeria</a></li>
-      <li><a href="./contacto.html">Contacto</a></li>
-      <li><a href="./register.html" class="btn-register">Registro</a></li>
+      <li><a  href="../index.html">Inicio</a></li>
+      <li><a href="../#sobre-nosotros">Nosotros</a></li>
+      <li><a  href="../#productos">Restauraciones</a></li>
+      <li><a href="../view/galeria.html">Galeria</a></li>
+      <li><a href="../view/contacto.html">Contacto</a></li>
+      <li><a href="../view/register.html" class="btn-register">Registro</a></li>
     </ul>            
   </nav>
     
@@ -24,7 +24,7 @@ nav = `
   <div id="mobile-menu" class="overlay">
     <a onclick="closeNav()" href="" class="close">&times;</a>
       <div class="overlay-content">
-          <a  href="./index.html">Inicio</a>
+          <a  href="../index.html">Inicio</a>
           <a href="./#sobre-nosotros">Nosotros</a>
           <a  href="./#productos">Restauraciones</a>
           <a href="./galeria.html">Galeria</a>
