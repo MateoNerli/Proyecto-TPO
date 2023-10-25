@@ -103,6 +103,86 @@
       "precio": 399.99,
       "descripcion": "Mueble restaurado de madera maciza, con cajones, tuvo un pequeño golpe en la parte superior, pero se restauro y quedo como nuevo. Muy estetico para el living.",
       "tipo": "Sala de estar"
+    },
+    {
+      "id": 14,
+      "nombre": "Escritorio de oficina",
+      "imagen": "../images/galeria/escritorio-oficina.jpg",
+      "precio": 249.99,
+      "descripcion": "Un escritorio de oficina con espacio de almacenamiento y diseño moderno.",
+      "tipo": "Oficina"
+    },
+    {
+      "id": 15,
+      "nombre": "Mesa de centro",
+      "imagen": "../images/galeria/mesa-centro.jpg",
+      "precio": 149.99,
+      "descripcion": "Una mesa de centro elegante y funcional para la sala de estar.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 16,
+      "nombre": "Cómoda para dormitorio",
+      "imagen": "../images/galeria/comoda-dormitorio.jpg",
+      "precio": 349.99,
+      "descripcion": "Una cómoda espaciosa para el dormitorio con cajones amplios.",
+      "tipo": "Dormitorio"
+    },
+    {
+      "id": 17,
+      "nombre": "Mesa de estudio",
+      "imagen": "../images/galeria/mesa-estudio.jpg",
+      "precio": 199.99,
+      "descripcion": "Una mesa de estudio compacta y funcional para estudiantes.",
+      "tipo": "Estudio"
+    },
+    {
+      "id": 18,
+      "nombre": "Sillón reclinable",
+      "imagen": "../images/galeria/sillon-reclinable.jpg",
+      "precio": 449.99,
+      "descripcion": "Un cómodo sillón reclinable con mecanismo de inclinación ajustable.",
+      "tipo": "Sala de estar"
+    },
+    {
+      "id": 19,
+      "nombre": "Mesa de cocina",
+      "imagen": "../images/galeria/mesa-cocina.jpg",
+      "precio": 199.99,
+      "descripcion": "Una mesa de cocina compacta con capacidad para 4 personas.",
+      "tipo": "Cocina"
+    },
+    {
+      "id": 20,
+      "nombre": "Mesa auxiliar",
+      "imagen": "../images/galeria/mesa-auxiliar.jpg",
+      "precio": 79.99,
+      "descripcion": "Una mesa auxiliar versátil para cualquier habitación de la casa.",
+      "tipo": "Versátil"
+    },
+    {
+      "id": 21,
+      "nombre": "Mueble de baño",
+      "imagen": "../images/galeria/mueble-bano.jpg",
+      "precio": 179.99,
+      "descripcion": "Un mueble de baño con espacio de almacenamiento y espejo incorporado.",
+      "tipo": "Baño"
+    },
+    {
+      "id": 22,
+      "nombre": "Mesa de jardín",
+      "imagen": "../images/galeria/mesa-jardin.jpg",
+      "precio": 299.99,
+      "descripcion": "Una mesa de jardín resistente a la intemperie para disfrutar al aire libre.",
+      "tipo": "Jardín"
+    },
+    {
+      "id": 23,
+      "nombre": "Mesa plegable",
+      "imagen": "../images/galeria/mesa-plegable.jpg",
+      "precio": 129.99,
+      "descripcion": "Una mesa plegable portátil que ahorra espacio en cualquier lugar.",
+      "tipo": "Versátil"
     }
   ]
 }
