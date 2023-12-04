@@ -25,12 +25,12 @@
           <input type="number" name="precio" id="precio" v-model="precio">
         </div>
         <div class="mb-3">
-          <label for="stock">Descripcion</label>
+          <label for="descripcion">Descripcion</label>
           <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
         </div>
         <div class="mb-3">
           <label for="imagen">Imagen</label>
-          <input type="image" name="imagen" id="imagen" v-model="imagen">
+          <input type="text" name="imagen" id="imagen" v-model="imagen">
           <img width="100" :src="imagen" alt="">
         </div>
           <button type="button" class="btn btn-success" v-on:click="grabar()">Guardar</button>
