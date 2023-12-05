@@ -29,6 +29,7 @@ nav = `
           <a href="../#sobre-nosotros">Nosotros</a>
           <a  href="../#productos">Restauraciones</a>
           <a href="../view/galeria.html">Galeria</a>
+          <a href="../view/productos.html">Productos</a>
           <a href="../view/contacto.html">Contacto</a>
           <a href="../view/register.html" class="btn-register">Registro</a>   
         </div>
