@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>RenovArte - Productos</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../images/logoIcon.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/producto_admin.css">
+    </head>
+<body>
+    <div id="navbar"></div>
+    <main class="main">
+        <div id="app" class="container">
+            <h2 class="tituloProd">Gestión de Usuarios</h2>
+            <br>
+            <br><br>
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Rol</th>
+                                    <th scope="col">Password</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class=""  v-for="usuario in usuarios">
+                                    <td scope="row" class="num">{{usuario.id}}</td>
+                                    <td>{{usuario.nombre}}</td>
+                                    <td>{{usuario.apellido}}</td>
+                                    <td>{{usuario.user}}</td>
+                                    <td>{{usuario.email}}</td>
+                                    <td>{{usuario.role}}</td>
+                                    <td class="num">{{usuario.password}}</td>
+                                    <td class="actions">
+                                        <a class="btnProd" :href="'editar-user.html?id='+ usuario.id" v-on:click="editar(usuario.id)" >Editar</a>
+                                        <button type="button" class="btnProd btnDelete" v-on:click="eliminar(usuario.id)" >Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/createdUser.js"></script>
+</body>
+</html>
