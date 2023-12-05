@@ -31,6 +31,7 @@ nav = `
           <a href="../view/galeria.html">Galeria</a>
           <a href="../view/contacto.html">Contacto</a>
           <li> <a href="../view/register.html" class="btn-register">Registro</a></li>
+          <li> <a href="#" onclick="logout()" class="btn-logout" style="display: none;">Cerrar sesión</a></li>
         </div>
   </div>
 
