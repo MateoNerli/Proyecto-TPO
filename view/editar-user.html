@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-      <title>RenovArte - Actualizar producto</title>
+      <title>RenovArte - Actualizar usuario</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,8 +50,15 @@
               </div>
               <div class="mb-3">
                 <label for="role">Rol: &#160</label>
-                <input type="number" name="role" id="role" v-model="role" >
+                <select name="role" id="role" v-model="role">
+                  <option value="1">User</option>
+                  <option value="0">Admin</option>
+                </select>
               </div>
+              <!-- <div class="mb-3">
+                <label for="role">Rol: &#160</label>
+                <input type="number" name="role" id="role" v-model="role" >
+              </div> -->
   
             <button type="button" class="btnProd" v-on:click="editar()">Grabar</button>
             </form>

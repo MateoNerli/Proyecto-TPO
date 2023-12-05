@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
     <head>
-        <title>RenovArte - Productos</title>
+        <title>RenovArte - Usuarios</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +50,9 @@
                                     <td>{{usuario.apellido}}</td>
                                     <td>{{usuario.user}}</td>
                                     <td>{{usuario.email}}</td>
-                                    <td class="num">{{usuario.role}}</td>
+                                    <!-- <td class="num">{{usuario.role}}</td> -->
+                                    <td v-if="usuario.role == 0">admin</td>
+                                    <td v-else>user</td>
                                     <td>{{usuario.password}}</td>
                                     <td class="actions">
                                         <a class="btnProd" :href="'editar-user.html?id='+ usuario.id" v-on:click="editar(usuario.id)" >Editar</a>
