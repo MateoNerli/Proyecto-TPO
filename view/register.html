@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RenovArte - Register</title>
-    <link rel="shortcut icon" href="../images/logoIcon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/logoIcon.png"
+      type="image/x-icon"
+    />
 
     <!-- FontAsome -->
     <script
@@ -20,24 +24,53 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <div class="containerForm">
+    <div class="containerForm" id="app">
       <form class="form">
         <p class="title">Registro</p>
         <p class="message">Registrate en nuestra pagina.</p>
         <div class="flex">
           <label>
-            <input class="input" type="text" placeholder="" required="" />
+            <input
+              class="input"
+              name="nombre"
+              id="nombre"
+              v-model="nombre"
+              type="text"
+            />
             <span>Nombre</span>
           </label>
 
           <label>
-            <input class="input" type="text" placeholder="" required="" />
+            <input
+              class="input"
+              name="apellido"
+              id="apellido"
+              v-model="apellido"
+              type="text"
+            />
             <span>Apellido</span>
           </label>
         </div>
 
         <label>
-          <input class="input" type="email" placeholder="" required="" />
+          <input
+            class="input"
+            name="user"
+            id="user"
+            v-model="user"
+            type="text"
+          />
+          <span>User</span>
+        </label>
+
+        <label>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            v-model="email"
+          />
           <span>Email</span>
         </label>
 
@@ -45,28 +78,23 @@
           <input
             class="input"
             type="password"
-            id="pass"
-            placeholder=""
-            required
+            id="password"
+            name="password"
+            v-model="password"
           />
           <span>Contraseña</span>
           <i class="toggle-password fas fa-eye" onclick="togglePassword()"></i>
         </label>
-        <label>
-          <input
-            class="input"
-            type="password"
-            id="passCon"
-            placeholder=""
-            required
-          />
+        <!-- <label>
+          <input class="input" type="password" id="passCon" />
           <span>Confirma Contraseña</span>
           <i
             class="toggle-password fas fa-eye"
             onclick="togglePasswordCon()"
           ></i>
-        </label>
-        <button class="submit">Registrate</button>
+        </label> -->
+        <button class="submit" v-on:click.prevent="grabar()">Registrate</button>
+
         <p class="signin">
           Ya tenes una cuenta? <a href="./login.html">Ingresa</a>
         </p>
@@ -74,7 +102,9 @@
     </div>
     <footer id="footer"></footer>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/register.js"></script>
+    <script src="../js/createdUser.js"></script>
   </body>
 </html>
