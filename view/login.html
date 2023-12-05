@@ -24,14 +24,14 @@
   </head>
   <body>
     <div id="navbar"></div>
-    <div class="containerForm">
+    <div class="containerForm" id="app">
       <form class="form">
         <p class="title">Login</p>
         <p class="message">Logueate en nuestra pagina.</p>
 
         <label>
-          <input class="input" type="email" placeholder="" required="" />
-          <span>Email</span>
+          <input class="input" type="text" v-model="username" />
+          <span>User</span>
         </label>
 
         <label class="password-label">
@@ -39,14 +39,15 @@
             class="input"
             type="password"
             id="password"
-            placeholder=""
-            required
+            v-model="password"
           />
           <span>Contraseña</span>
           <i class="toggle-password fas fa-eye" onclick="togglePassword()"></i>
         </label>
 
-        <button class="submit">Ingresa</button>
+        <button class="submit" type="submit" v-on:click.prevent="login()">
+          Ingresa
+        </button>
         <p class="signin">
           No tenes una cuenta? <a href="./register.html">Registrate</a>
         </p>
@@ -54,7 +55,9 @@
     </div>
     <footer id="footer" class="bg-gray-800 text-white py-12"></footer>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/register.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
