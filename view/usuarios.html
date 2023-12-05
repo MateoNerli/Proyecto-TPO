@@ -50,8 +50,8 @@
                                     <td>{{usuario.apellido}}</td>
                                     <td>{{usuario.user}}</td>
                                     <td>{{usuario.email}}</td>
-                                    <td>{{usuario.role}}</td>
-                                    <td class="num">{{usuario.password}}</td>
+                                    <td class="num">{{usuario.role}}</td>
+                                    <td>{{usuario.password}}</td>
                                     <td class="actions">
                                         <a class="btnProd" :href="'editar-user.html?id='+ usuario.id" v-on:click="editar(usuario.id)" >Editar</a>
                                         <button type="button" class="btnProd btnDelete" v-on:click="eliminar(usuario.id)" >Eliminar</button>
