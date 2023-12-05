@@ -4,22 +4,22 @@
         <title>RenovArte - Productos</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         <link rel="shortcut icon" href="../images/logoIcon.png" type="image/x-icon">
         <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="../styles/nav.css">
         <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/galeria.css">
+        <link rel="stylesheet" href="../styles/producto_admin.css">
     </head>
     <body>
         <div id="navbar"></div>
         <main class="main">
             <div id="app" class="container">
-                <h2 class="tituloGale">Editar productos</h2>
+                <h2 class="tituloProd">Editar productos</h2>
                 <br>
-                <a  class="btn btn-warning" href="/view/producto_nuevo.html">Nuevo</a>
+                <a  class="btnProd" href="/view/producto_nuevo.html">Nuevo</a>
                 <br><br>
                 <div v-if="error">
                     <p>Lo sentimos , ........</p>
@@ -44,16 +44,16 @@
                                 </thead>
                                 <tbody>
                                     <tr class=""  v-for="producto in productos">
-                                        <td scope="row">{{producto.id}}</td>
+                                        <td scope="row" class="num">{{producto.id}}</td>
                                         <td>{{producto.nombre}}</td>
-                                        <td>{{producto.precio}}</td>
-                                        <td>{{producto.stock}}</td>
+                                        <td class="num">${{producto.precio}}</td>
+                                        <td class="num">{{producto.descripcion}}</td>
                                         <td>
                                             <img width="60"  :src="producto.imagen" :alt="producto.nombre">
                                         </td>
-                                        <td>
-                    			            <a class="btn btn-success" :href="'producto_update.html?id='+ producto.id" >Editar</a>
-                                            <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+                                        <td class="actions">
+                    			            <a class="btnProd" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                                            <button type="button" class="btnProd btnDelete" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                         </td>
                                     </tr>
                                 </tbody>

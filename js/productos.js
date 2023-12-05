@@ -10,7 +10,7 @@ const { createApp } = Vue
         id:0,
         nombre:"", 
         imagen:"",
-        descripcion:0,
+        descripcion:"",
         precio:0,
     }  
     },
@@ -55,7 +55,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./view/productos.html";  // recarga productos.html
+                    window.location.href = "./productos.html";  // recarga productos.html
                 })
                 .catch(err => {
                     console.error(err);
