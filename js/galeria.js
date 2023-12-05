@@ -2,7 +2,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      url: "../db/datos.json",
+      url: "https://mateonerli.pythonanywhere.com/productos",
       error: false,
       datosFinales: [],
       datos: [],
@@ -15,7 +15,7 @@ createApp({
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
-          this.datos = data.muebles;
+          this.datos = data;
           this.datosFinales = this.datos;
 
           for (elemento of this.datos) {
