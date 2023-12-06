@@ -42,9 +42,10 @@ createApp({
           throw new Error("Error al iniciar sesión");
         }
 
-        const data = await response.text();
+        const data = await response.json();
 
-        if (data === "Inicio de sesión exitoso") {
+        if (data.status === "Inicio de sesión exitoso") {
+          localStorage.setItem("user", JSON.stringify(data));
           alert("Inicio de sesión exitoso");
           window.location.href = "../index.html";
         } else {

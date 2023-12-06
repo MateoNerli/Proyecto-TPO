@@ -14,9 +14,9 @@ nav = `
       <li><a href="../#sobre-nosotros">Nosotros</a></li>
       <li><a  href="../#productos">Restauraciones</a></li>
       <li><a href="../view/galeria.html">Galeria</a></li>
-      <li><a href="../view/productos.html">Productos</a></li>
       <li><a href="../view/contacto.html">Contacto</a></li>
-      <li><a href="../view/register.html" class="btn-register">Registro</a></li>
+      <li> <a href="../view/register.html" class="btn-register">Registro</a></li>
+      <li> <a href="#" onclick="logout()" class="btn-logout" style="display: none;">Cerrar sesión</a></li>
     </ul>            
   </nav>
     
@@ -29,9 +29,8 @@ nav = `
           <a href="../#sobre-nosotros">Nosotros</a>
           <a  href="../#productos">Restauraciones</a>
           <a href="../view/galeria.html">Galeria</a>
-          <a href="../view/productos.html">Productos</a>
           <a href="../view/contacto.html">Contacto</a>
-          <a href="../view/register.html" class="btn-register">Registro</a>   
+          <li> <a href="../view/register.html" class="btn-register">Registro</a></li>
         </div>
   </div>
 
@@ -63,12 +62,11 @@ footer = `
     </div>
   </div>
 
-  <div class="partes">
-    <h3 >Soporte</h3>
+  <div class="partes"  id="soporteSection" style="display: none;" >
+    <h3 >Soporte para admin</h3>
     <div class="info">
-      <a href="#" >Preguntas Frecuentes</a>
-      <a href="#" >Ayuda en línea</a>
-      <a href="#" >Confianza y Seguridad</a>
+      <a href="../view/productos.html">Pruductos</a>
+      <a href="../view/usuarios.html">Usuarios</a>
     </div>
   </div>
 </div>
@@ -99,4 +97,21 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mobile-menu").style.width = "0%";
+}
+
+window.onload = function () {
+  let user = JSON.parse(localStorage.getItem("user"));
+  if (user) {
+    document.querySelector(".btn-register").style.display = "none";
+    document.querySelector(".btn-logout").style.display = "block";
+
+    if (user.role === 0) {
+      document.getElementById("soporteSection").style.display = "block";
+    }
+  }
+};
+
+function logout() {
+  localStorage.removeItem("user");
+  window.location.href = "../view/register.html";
 }
