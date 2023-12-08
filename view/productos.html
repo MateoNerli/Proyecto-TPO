@@ -5,25 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="shortcut icon"
-      href="../images/logoIcon.png"
-      type="image/x-icon"
-    />
-    <script
-      src="https://kit.fontawesome.com/2c36e9b7b1.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../styles/producto_admin.css">
+    <link rel="shortcut icon" href="../images/logoIcon.png"type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/producto_admin.css" />
+
   </head>
   <body>
     <div id="navbar"></div>
@@ -42,21 +32,21 @@
             <p>Cargando .....</p>
           </section>
           <section v-else>
-            <div class="table-responsive">
-              <table class="table table-bordered">
+            <div class="table-container">
+              <table class="tables">
                 <thead>
                   <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Stock</th>
-                    <th scope="col">Imagen</th>
-                    <th scope="col">Acciones</th>
+                    <th class="table th">Id</th>
+                    <th class="table th">Nombre</th>
+                    <th class="table th">Precio</th>
+                    <th class="table th">Stock</th>
+                    <th class="table th">Imagen</th>
+                    <th class="table th">Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="" v-for="producto in productos">
-                    <td scope="row" class="num">{{producto.id}}</td>
+                  <tr class="table tr" v-for="producto in productos">
+                    <td class="num">{{producto.id}}</td>
                     <td>{{producto.nombre}}</td>
                     <td class="num">${{producto.precio}}</td>
                     <td class="num">{{producto.descripcion}}</td>
