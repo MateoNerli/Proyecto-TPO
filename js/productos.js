@@ -12,6 +12,7 @@ const { createApp } = Vue
         imagen:"",
         descripcion:"",
         precio:0,
+        tipo:""
     }  
     },
     methods: {
@@ -44,7 +45,8 @@ const { createApp } = Vue
                 nombre:this.nombre,
                 precio: this.precio,
                 descripcion: this.descripcion,
-                imagen:this.imagen
+                imagen:this.imagen,
+                tipo:this.tipo
             }
             var options = {
                 body:JSON.stringify(producto),

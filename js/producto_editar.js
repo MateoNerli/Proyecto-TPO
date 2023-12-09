@@ -10,6 +10,7 @@ const { createApp } = Vue
         imagen:"",
         descripcion:0,
         precio:0,
+        tipo:"",
         url:'https://mateonerli.pythonanywhere.com/productos/'+id,
        }  
     },
@@ -23,7 +24,8 @@ const { createApp } = Vue
                     this.nombre = data.nombre;
                     this.imagen=data.imagen
                     this.descripcion=data.descripcion
-                    this.precio=data.precio                    
+                    this.precio=data.precio 
+                    this.tipo=data.tipo                   
                 })
                 .catch(err => {
                     console.error(err);
@@ -35,7 +37,8 @@ const { createApp } = Vue
                 nombre:this.nombre,
                 precio: this.precio,
                 descripcion: this.descripcion,
-                imagen: this.imagen
+                imagen: this.imagen,
+                tipo:this.tipo
             }
             var options = {
                 body: JSON.stringify(producto),
