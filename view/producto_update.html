@@ -39,12 +39,21 @@
 
           <div class="mb-3">
             <label for="descripcion">Descripción: &#160</label>
-            <textarea type="text" name="descripcion" id="descripcion" v-model="descripcion">
-          </div>
+            <textarea type="text" name="descripcion" id="descripcion" v-model="descripcion"></textarea>
 
+          </div>
+          
           <div class="mb-3">
             <label for="tipo">Tipo: &#160</label>
-            <input type="text" name="tipo" id="tipo" v-model="tipo">
+            <select name="tipo" id="tipo" v-model="tipo">
+              <option value="Sala de estar">Sala de estar</option>
+              <option value="Comedor">Comedor</option>
+              <option value="Dormitorio">Dormitorio</option>
+              <option value="Oficina">Oficina</option>
+              <option value="Baño">Baño</option>
+              <option value="Versátil">Versátil</option>
+              <option value="Jardín">Jardín</option>
+            </select>
           </div>
 
           <div class="mb-3">
