@@ -84,6 +84,9 @@ createApp({
           this.error = true;
         });
     },
+    mostrarPassword(password) {
+      return password.slice(0, 4); // Returns the substring containing the first four characters
+    },
   },
   created() {
     this.fetchData(this.url);
