@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles/producto_admin.css">
-    <link rel="shortcut icon" href="../images/logoIcon.png"type="image/x-icon"/>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/producto_admin.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logoIcon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/nav.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/admin.css" />
-
   </head>
   <body>
     <div id="navbar"></div>
@@ -21,7 +27,7 @@
       <div id="app" class="container">
         <h2 class="tituloProd">Todos los productos</h2>
         <br />
-        <a class="btnProd" href="/view/producto_nuevo.html">Nuevo</a>
+        <a class="btnProdNuevo" href="/view/producto_nuevo.html">Nuevo</a>
         <br /><br />
         <div v-if="error">
           <p>Lo sentimos , ........</p>
@@ -60,24 +66,25 @@
                       />
                     </td>
                     <td class="actions">
-                      <a
-                        class="btnProd"
-                        :href="'producto_update.html?id='+ producto.id"
-                        >Editar</a
-                      >
-                      <button
-                        type="button"
-                        class="btnProd btnDelete"
-                        v-on:click="eliminar(producto.id)"
-                      >
-                        Eliminar
-                      </button>
+                      <div class="bbtns">
+                        <a :href="'producto_update.html?id='+ producto.id">
+                          <button class="Btn">
+                            <i class="fas fa-edit"></i></button
+                        ></a>
+                        <button
+                          class="button"
+                          type="button"
+                          v-on:click="eliminar(producto.id)"
+                        >
+                          <i class="fas fa-trash-alt"></i>
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <br><br>
+            <br /><br />
           </section>
         </div>
       </div>
@@ -95,7 +102,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../js/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--Link de VUE-->
     <script src="../js/productos.js"></script>

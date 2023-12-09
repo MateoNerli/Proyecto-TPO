@@ -31,11 +31,20 @@
         </div>
         <div class="mb-3">
           <label for="descripcion">Descripción: &#160</label>
-          <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
-        </div>
+          <textarea type="text" name="descripcion" id="descripcion" v-model="descripcion"></textarea>
+
+          </div>
         <div class="mb-3">
           <label for="tipo">Tipo: &#160</label>
-          <input type="text" name="tipo" id="tipo" v-model="tipo">
+          <select name="tipo" id="tipo" v-model="tipo">
+            <option value="Sala de estar">Sala de estar</option>
+            <option value="Comedor">Comedor</option>
+            <option value="Dormitorio">Dormitorio</option>
+            <option value="Oficina">Oficina</option>
+            <option value="Baño">Baño</option>
+            <option value="Versátil">Versátil</option>
+            <option value="Jardín">Jardín</option>
+          </select>
         </div>
 
         <div class="mb-3">
@@ -43,7 +52,7 @@
           <input type="text" name="imagen" id="imagen" v-model="imagen">
           <img width="100" :src="imagen" alt="">
         </div>
-          <button type="button" class="btnProd" v-on:click="grabar()">Guardar</button>
+          <button type="button" class="btnProdNuevo" v-on:click="grabar()">Guardar</button>
       </form>
     </div>
   </main>
@@ -55,7 +64,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 
-  <script src="../js/main.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="../js/productos.js"></script>
   <script src="../js/scripts.js"></script>
