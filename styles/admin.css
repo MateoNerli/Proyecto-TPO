@@ -162,7 +162,7 @@ table tr:last-child {
   border-radius: 10px;
 }
 
-i {
+.icon {
   width: 13px;
   position: absolute;
   right: 0;
