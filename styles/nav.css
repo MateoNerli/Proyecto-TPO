@@ -59,6 +59,29 @@ body {
   transform: scale(1.1);
 }
 
+.header .btn-logout {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  text-decoration: none;
+  padding: 9px 25px;
+  background: #8d4925;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header .btn-logout {
+  text-decoration: none;
+  color: #1b3039;
+}
+
+.header .btn-logout :hover {
+  background-color: #562b14;
+  color: black;
+  transform: scale(1.1);
+}
+
 .header .nav-links {
   list-style: none;
 }
