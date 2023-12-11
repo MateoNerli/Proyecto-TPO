@@ -46,14 +46,33 @@ createApp({
 
         if (data.status === "Inicio de sesión exitoso") {
           localStorage.setItem("user", JSON.stringify(data));
-          alert("Inicio de sesión exitoso");
-          window.location.href = "../index.html";
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Inicio de sesión exitoso",
+            showConfirmButton: false,
+            timer: 1500,
+          }).then(() => {
+            window.location.href = "../index.html";
+          });
         } else {
-          alert("Nombre de usuario o contraseña incorrectos");
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Error al iniciar sesión",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       } catch (error) {
         console.error(error);
-        alert("Error al iniciar sesión");
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Error al iniciar sesión",
+          showConfirmButton: false,
+          timer: 1500,
+        });
       }
     },
   },

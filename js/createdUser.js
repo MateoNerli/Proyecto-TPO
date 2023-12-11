@@ -38,8 +38,27 @@ createApp({
       fetch(url, options)
         .then((res) => res.text()) // or res.json()
         .then((res) => {
-          alert("Registro Eliminado");
-          location.reload(); // recarga el json luego de eliminado el registro
+          Swal.fire({
+            title: "¿Estás seguro de eliminar el registro?",
+            text: "No podrás revertirlo!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Si, eliminar!",
+            cancelButtonText: "No, cancelar!",
+            reverseButtons: true,
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                "Eliminado!",
+                "El registro ha sido eliminado.",
+                "success"
+              ).then(() => {
+                location.reload(); // recarga el json luego de eliminado el registro
+              });
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+              Swal.fire("Cancelado", "El registro no se eliminó", "error");
+            }
+          });
         });
     },
     grabar() {
@@ -59,8 +78,16 @@ createApp({
       };
       fetch(this.url, options)
         .then(function () {
-          alert("Registro grabado");
-          window.location.href = "../view/login.html";
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Usuario creado correctamente",
+            showConfirmButton: false,
+            timer: 1500,
+            toast: true,
+          }).then(() => {
+            window.location.href = "../view/login.html";
+          });
         })
         .catch((err) => {
           console.error(err);
